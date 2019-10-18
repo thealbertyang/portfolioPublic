@@ -3,8 +3,6 @@ services:
   portfolio:
     build:
       context: ./portfolio
-    volumes:
-      - ./portfolio:/usr/src/app
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
