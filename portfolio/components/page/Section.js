@@ -12,8 +12,8 @@ const Section = ({ name, fluid, backgroundImage, backgroundColor, backgroundSize
                 ${typeof className !== undefined ? className : ''}
             `} 
             style={{
-                backgroundColor: typeof backgroundColor !== undefined && backgroundImage !== null ? backgroundColor : null,
-                backgroundImage: typeof backgroundImage !== undefined && backgroundImage !== null ? `url( ${backgroundImage} )` : null,
+                backgroundColor: typeof backgroundColor !== undefined ? backgroundColor : null,
+                backgroundImage: typeof backgroundImage !== undefined ? `url(${backgroundImage})` : null,
                 backgroundSize:  typeof backgroundSize !== undefined ? backgroundSize : 'center center',
                 backgroundPosition: typeof backgroundPosition !== undefined ? backgroundPosition : 'cover',
                 backgroundRepeat: 'no-repeat',
