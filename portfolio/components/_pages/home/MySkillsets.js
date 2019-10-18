@@ -8,9 +8,9 @@ const MySkillsets = () =>
       <div className="row">
         <div className='col-12 col-md-4'>
           <div className='row d-flex flex-column pb-4' style={{ flex: '1 1', height: '100%' }}>
-            <div className='col-12 d-flex flex-column justify-content-start align-items-start' style={{ flex: '1 1' }}>
+            <div className='col-12 d-flex flex-column justify-content-start align-items-center align-items-md-start' style={{ flex: '1 1' }}>
               <h2 className='mb-4 text-white'>My skillsets</h2>
-              <p className='body-one text-white-50'>I have years of experience in front-end and back-end design. My expertise is well rounded.</p>
+              <p className='text-white-50 text-center text-md-right'>I have years of experience in front-end and back-end design. My expertise is well rounded.</p>
             </div>
           </div>
         </div>

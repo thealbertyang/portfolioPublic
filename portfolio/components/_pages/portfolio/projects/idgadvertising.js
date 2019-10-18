@@ -4,7 +4,7 @@ import Section from '../../../page/Section';
 const IDGAdvertising = () => {
     return (
         <>
-        <Section backgroundColor={`#f5f5f5`}>
+        <Section backgroundColor={`#f5f5f5`} fluid>
             <div className='container py-5'>
                 <div className='row'>
                     <div className='col-md-12 text-center d-flex flex-column justify-content-center'>

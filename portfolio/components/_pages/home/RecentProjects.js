@@ -17,7 +17,7 @@ const RecentProjects = () =>
         <Overline className='text-muted'>Recent</Overline>
         <h2 className='font-weight-light mb-4'>Projects</h2>
       </div>
-      <div className='col-4 d-flex align-items-end justify-content-end'>
+      <div className='col-4 d-flex align-items-end justify-content-end mb-5'>
         <ButtonAlt url={`/portfolio`}>
           More <i className={`material-icons`}>keyboard_arrow_right</i>
         </ButtonAlt>
