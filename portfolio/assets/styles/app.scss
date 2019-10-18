@@ -1,0 +1,25 @@
+// Fonts
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700|Quicksand:400,500,600');
+@import "fonts/graphik";
+
+// Variables
+@import "variables/app";
+@import "variables/fonts";
+
+//Bootstrap 
+@import "~bootstrap/scss/bootstrap";
+
+// Components
+@import "components/button";
+@import "components/navbar";
+@import "components/overline";
+@import "components/portfolio";
+@import "components/typography";
+
+
+
+
+
+

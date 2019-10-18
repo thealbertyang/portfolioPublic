@@ -1,0 +1,106 @@
+/*
+
+  Page Portfolio
+
+*/
+
+.portfolio-link {
+    flex-grow: 1;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .9s cubic-bezier(.18,1,.21,1)!important;
+    -moz-transition: .9s cubic-bezier(.18,1,.21,1)!important;
+    -ms-transition: .9s cubic-bezier(.18,1,.21,1)!important;
+    -o-transition: .9s cubic-bezier(.18,1,.21,1)!important;
+    transition: .9s cubic-bezier(.18,1,.21,1)!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #eee;
+    overflow: hidden;
+}
+
+.portfolio-link .portfolio-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    will-change: transform;
+    -webkit-transition: -webkit-transform .35s cubic-bezier(.25,.46,.45,.94);
+    transition: -webkit-transform .35s cubic-bezier(.25,.46,.45,.94);
+    transition: transform .35s cubic-bezier(.25,.46,.45,.94);
+    transition: transform .35s cubic-bezier(.25,.46,.45,.94),-webkit-transform .35s cubic-bezier(.25,.46,.45,.94);
+    z-index: 0;
+}
+
+.portfolio-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 0 0 30px rgba(0,0,0,.4), 2px 2px 6px rgba(0,0,0,.3);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transition: visibility .14s ease-out,opacity .14s ease-out,-webkit-transform .24s ease;
+    transition: visibility .14s ease-out,opacity .14s ease-out,-webkit-transform .24s ease;
+    transition: visibility .14s ease-out,opacity .14s ease-out,transform .24s ease;
+    transition: visibility .14s ease-out,opacity .14s ease-out,transform .24s ease,-webkit-transform .24s ease;
+}
+
+.portfolio-link:hover .portfolio-bg {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.bg-image-right {
+  overflow: hidden;
+  transform: scale(1) translateY(0%) translateX(0%);
+}
+
+.bg-image-left {
+  overflow: hidden;
+  transform: scale(1) translateY(-4%) translateX(-34%);
+}

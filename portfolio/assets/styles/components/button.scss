@@ -1,0 +1,19 @@
+/*
+
+	Buttons
+
+*/
+
+.btn {
+    font-family: $graphik-font-stack;
+  }
+  
+.btn-lg {
+font-size: 1rem !important;
+letter-spacing: 2px;
+font-size: 1.2rem;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+}

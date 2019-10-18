@@ -1,0 +1,34 @@
+/*
+
+  Navbar
+
+*/
+
+.navbar-brand {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+
+  a {
+    font-family: $quicksand-font-stack;
+    font-weight: 500;
+    color: #333333;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+}
+
+.navbar {
+  z-index: 100;
+}
+
+.navbar nav a {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+	&:hover {
+			text-decoration: none;
+	}
+}

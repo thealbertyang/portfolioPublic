@@ -1,0 +1,40 @@
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-family: $graphik-font-stack;
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-family: $graphik-font-stack;
+    font-size: 3.75rem;
+}
+
+h3 {
+    font-family: $graphik-font-stack;
+    font-size: 3rem;
+}
+
+h4 {
+    font-family: $graphik-font-stack;
+    font-size: 2.125rem;
+}
+
+h5 {
+    font-family: $graphik-font-stack;
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-family: $graphik-font-stack;
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: $worksans-font-stack;
+    font-size: 18px;
+}
