@@ -33,7 +33,7 @@ const Portfolio = () => {
             <div className='row'>
                 <div className='col-12 d-flex flex-column'>
                     {typeof project.github !== undefined && <a href={project.url} target='_blank' className='btn btn-primary mb-2' tabIndex="1"><i className='fas fa-globe fa-fw'></i> View Site</a>}
-                    {typeof project.github !== undefined && <a href='https://github.com/thealbertyang/inhertia' target='_blank' className='btn' tabIndex="2" className="btn text-white"><i className="fab fa-github"></i> View Github</a>}
+                    {typeof project.github !== undefined && <a href={project.github} target='_blank' className='btn' tabIndex="2" className="btn text-white"><i className="fab fa-github"></i> View Github</a>}
                 </div>
             </div>
         </Header>

@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () =>
     <div className="footer container-fluid p-5">
       <div className={`row`}>
-        <div className="col-md-4 d-flex align-items-center text-secondary text-justify">
+        <div className="col-md-4 d-flex align-items-center text-secondary text-justify mb-5 mb-md-0">
           2018 Albert Yang -- All Rights Reserved
         </div>
         <div className="col-md-4 offset-md-4 d-flex justify-content-end text-secondary">

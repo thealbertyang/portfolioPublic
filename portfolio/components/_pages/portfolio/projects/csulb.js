@@ -12,7 +12,7 @@ const CSULB = () => {
                     </div>
                 </div>
                 <div className='col-md-4 offset-0 offset-md-1 d-flex flex-column justify-content-center order-0 order-md-1'>
-                    <h5 className='text-secondary'>Rental Finder</h5>
+                    <h4 className='text-secondary'>Rental Finder</h4>
                     <p className='text-justify text-muted mb-4 mb-md-0'>
                         The rental finder application would help students find housing nearby the university.
                     </p>
@@ -33,7 +33,7 @@ const CSULB = () => {
         <Section fluid backgroundColor={`#f5f5f5`} className="px-3 py-5">
             <div className='row'>
                 <div className='col-md-4 offset-md-1 d-flex flex-column justify-content-center'>
-                    <h5 className='text-muted'>Administrator Back-end</h5>
+                    <h4 className='text-secondary'>Administrator Backend</h4>
                     <p className='text-justify text-muted mb-4'>The administrator backend was customly built in PHP.</p>
                 </div>
                 <div className='col-md-6 pr-md-0 offset-0 offset-md-1'>
@@ -47,7 +47,7 @@ const CSULB = () => {
             <div className='container py-5'>
                 <div className='row'>
                     <div className='col-md-12 d-flex flex-column align-items-center justify-content-center'>
-                        <h5 className='text-secondary'>Front-end Interface</h5>
+                        <h4 className='text-secondary'>Front-end Interface</h4>
                         <p className='text-justify text-muted mb-4'>
                             These were the front-end interfaces I created with HTML, CSS and JQuery.
                         </p>

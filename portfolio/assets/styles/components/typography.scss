@@ -4,37 +4,61 @@ a {
     }
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: $graphik-font-stack;
-    font-size: 5.5rem;
+}
+
+
+h1 {
+    font-size: (5.5rem / $font-sm-ratio);
 }
 
 h2 {
-    font-family: $graphik-font-stack;
-    font-size: 3.75rem;
+    font-size: (3.75rem / $font-sm-ratio);
 }
 
 h3 {
-    font-family: $graphik-font-stack;
-    font-size: 3rem;
+    font-size: (3rem / $font-sm-ratio);
 }
 
 h4 {
-    font-family: $graphik-font-stack;
-    font-size: 2.125rem;
+    font-size: (2.125rem / $font-sm-ratio);
 }
 
 h5 {
-    font-family: $graphik-font-stack;
-    font-size: 1.5rem;
+    font-size: (1.5rem / $font-sm-ratio);
 }
 
 h6 {
-    font-family: $graphik-font-stack;
-    font-size: 1.25rem;
+    font-size: (1.25rem / $font-sm-ratio);
 }
 
 p {
-    font-family: $worksans-font-stack;
     font-size: 18px;
+}
+
+@include media-breakpoint-up(md) { 
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    h2 {
+        font-size: 3.75rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.125rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
 }

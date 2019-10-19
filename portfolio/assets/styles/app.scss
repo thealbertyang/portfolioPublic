@@ -7,9 +7,13 @@
 // Variables
 @import "variables/app";
 @import "variables/fonts";
+@import "variables/sizes";
 
 //Bootstrap 
 @import "~bootstrap/scss/bootstrap";
+
+// Mixins
+@import "mixins/sizing";
 
 // Components
 @import "components/button";

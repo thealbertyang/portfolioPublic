@@ -4,7 +4,7 @@ import Section from '../../page/Section'
 
 const MySkillsets = () =>
 <Section name={`mySkillsets`} fluid backgroundColor={`#232323`} className="p-5">
-    <div className="container my-5 p-5">
+    <div className="container my-5 p-md-5">
       <div className="row">
         <div className='col-12 col-md-4'>
           <div className='row d-flex flex-column pb-4' style={{ flex: '1 1', height: '100%' }}>

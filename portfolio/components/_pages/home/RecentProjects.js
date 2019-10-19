@@ -13,11 +13,11 @@ const RecentProjects = () =>
 <Section name={`recentProjects`} fluid backgroundColor={`#f3f3f3`} className="py-5">
   <div className='container' style={{ maxWidth: '1350px' }}>
     <div className="row">
-      <div className='col-4 offset-4 d-flex flex-column align-items-center'>
+      <div className='col-12 col-md-4 offset-md-4 d-flex flex-column align-items-center'>
         <Overline className='text-muted'>Recent</Overline>
         <h2 className='font-weight-light mb-4'>Projects</h2>
       </div>
-      <div className='col-4 d-flex align-items-end justify-content-end mb-5'>
+      <div className='col-12 col-md-4 d-flex justify-content-center align-items-end justify-content-md-end mb-5'>
         <ButtonAlt url={`/portfolio`}>
           More <i className={`material-icons`}>keyboard_arrow_right</i>
         </ButtonAlt>
