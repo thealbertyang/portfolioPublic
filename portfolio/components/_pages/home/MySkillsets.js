@@ -10,7 +10,7 @@ const MySkillsets = () =>
           <div className='row d-flex flex-column pb-4' style={{ flex: '1 1', height: '100%' }}>
             <div className='col-12 d-flex flex-column justify-content-start align-items-center align-items-md-start' style={{ flex: '1 1' }}>
               <h2 className='mb-4 text-white'>My skillsets</h2>
-              <p className='text-white-50 text-center text-md-right'>I have years of experience in front-end and back-end design. My expertise is well rounded.</p>
+              <p className='text-white-50 text-center text-md-left'>I have years of experience in front-end and back-end design. My expertise is well rounded.</p>
             </div>
           </div>
         </div>
