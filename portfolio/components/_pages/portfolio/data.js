@@ -2,7 +2,7 @@ export default [
 	{
 		title: 'Inhertia',
         slug: 'inhertia',
-        url: 'https://www.inhertia.com',
+        //url: 'https://www.inhertia.com',
         github: 'https://github.com/thealbertyang/inhertia',
 		background: '/img/portfolio/inhertia.jpg',
 		logo: '/img/portfolio/inhertia-logo.png',
