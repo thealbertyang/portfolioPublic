@@ -5,6 +5,8 @@ import dynamic from 'next/dynamic'
 
 import data from '../../components/_pages/portfolio/data';
 
+import Head from 'next/head'
+
 import Header from '../../components/page/Header';
 import Section from '../../components/page/Section';
 import MainLayout from '../../components/page/Layout';
@@ -18,11 +20,17 @@ const Portfolio = () => {
     let nextIndex = (data.length === projectIndex + 1) ? 0 : (projectIndex + 1)
        
     let projectsDir = '/portfolio/projects';
-    let projectFile = project && project.slug
+    let projectFile = project && project.slug;
+
+    let projectsTitle = project && project.title;
 
     const Project = project && dynamic(() => import('../../components/_pages'+projectsDir+'/'+projectFile))
 
     return project ? <MainLayout>
+        <Head>
+            <title>Albert Yang - {projectsTitle} </title>
+            <meta property="og:title" content="My page title" key="title" />
+        </Head>
         <Header 
             overlineText={`Projects`} 
             overlineClassName={`text-white`} 
