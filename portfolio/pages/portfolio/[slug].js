@@ -29,7 +29,7 @@ const Portfolio = () => {
     return project ? <MainLayout>
         <Head>
             <title>Albert Yang - {projectsTitle} </title>
-            <meta property="og:title" content="My page title" key="title" />
+            <meta property="og:title" content={`Albert Yang - ${projectsTitle}`} key="title" />
         </Head>
         <Header 
             overlineText={`Projects`} 

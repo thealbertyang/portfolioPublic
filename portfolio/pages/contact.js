@@ -6,6 +6,8 @@ import MainLayout from '../components/page/Layout';
 import Header from '../components/page/Header';
 import Section from '../components/page/Section';
 
+const title = "Contact";
+
 const onSubmit = async (values) => {
     let message = await new Promise(resolve => setTimeout(resolve({ response: 400 }), ms));
     if(message.response === 200){
@@ -19,7 +21,7 @@ const onSubmit = async (values) => {
 
 const Contact = () => {
     return (
-        <MainLayout>
+        <MainLayout title={title}>
             <Header
 				overlineText={`Get In`}
 				overlineClassName={`text-white`}

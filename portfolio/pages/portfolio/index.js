@@ -7,9 +7,11 @@ import Section from '../../components/page/Section'
 import data from '../../components/_pages/portfolio/data';
 import ProjectCard from '../../components/_pages/portfolio/Card'
 
+const title = "Portfolio";
+
 const Portfolio = () => {
     return (
-        <MainLayout>
+        <MainLayout title={title}>
             <Header 
                 overlineText={`Projects`} 
                 overlineClassName={`text-white`} 

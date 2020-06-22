@@ -4,9 +4,11 @@ import MainLayout from '../components/page/Layout';
 import Header from '../components/page/Header';
 import Section from '../components/page/Section';
 
-const Home = () => {
+const title = "About";
+
+const About = () => {
     return (
-        <MainLayout>
+        <MainLayout title={title}>
             <Header overlineText={`Me`} overlineClassName={`text-white`} titleClassName={`font-weight-light text-white`} titleText={`About`} backgroundImage={`/img/aboutBg.jpg`} height={`35rem`}>
                 <div className='row'>
                     <div className='col-12 d-flex flex-column'>

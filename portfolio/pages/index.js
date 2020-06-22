@@ -7,9 +7,11 @@ import RecentProjects from '../components/_pages/home/RecentProjects';
 import MySkillsets from '../components/_pages/home/MySkillsets';
 import Preview from '../components/_pages/home/Preview';
 
+const title = "Home";
+
 const Home = () => {
     return (
-        <MainLayout>
+        <MainLayout title={title}>
             <Hero/>
             <RecentProjects/>
             <MySkillsets/>
