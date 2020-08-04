@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Section = ({ name, fluid, background, backgroundImage, backgroundColor, backgroundSize, backgroundPosition, height, className, children, style }) => {
-    console.log('background'+ new Date(), background)
     return (
         <div 
             className={`

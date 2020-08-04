@@ -43,7 +43,7 @@ const TechList = ({ name, color, list, style }) => {
     <h1 className="mb-4" style={{ ...styles.headingDiscipline, color }}>{name}</h1>
     <ul className='d-flex flex-column flex-wrap' style={{ listStyle: 'none' }}>
       {list && list.map(item => 
-        <li className='d-flex align-items-center mb-3' style={{ maxWidth: '33%' }}>
+        <li key={item.name} className='d-flex align-items-center mb-3' style={{ maxWidth: '33%' }}>
           <img src={`/img/tech/${item.img}`} className="img-fluid w-40px"/>
           <h6 className="text-white mb-0 ml-2" style={styles.headingTech}>{item.name}</h6>
         </li>)
@@ -55,6 +55,7 @@ const TechList = ({ name, color, list, style }) => {
 const DisciplineList = ({ disciplines }) => disciplines.map((item, key) => 
     <TechList
       index={key}
+      key={key}
       {...item}
       style={{ paddingLeft: `${key * (100 / disciplines.length)}vh`, ...((key + 1) === disciplines.length ? { paddingBottom: '0 !important', marginBottom: '0 !important' } : null) }}
     />
@@ -173,14 +174,14 @@ const DisciplineObject = [
 
 const Tech = () =>
 <Section name={`Tech`} fluid background={`linear-gradient(165.45deg, #6966FF 2.2%, #00b7ca 97.12%) `} className="p-5" style={styles.roundedBottomBorders}>
-    <div className="row mx-auto"  style={{ maxWidth: '1440px' }}>
-      <div className='col-12 col-md-12'>
-        <h3 style={styles.title} className='mb-4'>Tech</h3>
-      </div>
-      <DisciplineList
-        disciplines={DisciplineObject}
-      />
+  <div className="row mx-auto"  style={{ maxWidth: '1440px' }}>
+    <div className='col-12 col-md-12'>
+      <h3 style={styles.title} className='mb-4'>Tech</h3>
     </div>
-  </Section>
+    <DisciplineList
+      disciplines={DisciplineObject}
+    />
+  </div>
+</Section>
 
 export default Tech

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Section from '../../page/Section'
 
@@ -37,43 +37,51 @@ const styles = {
 }
 
 
-const Work = () =>
-<Section name={`Work`} fluid className="py-5" style={styles.roundedTopCorners}>
-  <div className='container' style={{ maxWidth: '1600px' }}>
-    <div className="row">
-      <div className='col-12 col-md-4 offset-md-4 d-flex flex-column align-items-center'>
-        <h3 style={styles.title} className='mb-5'>Work</h3>
+const Work = () => {
+  const [ dataIndex, setDataIndex ] = useState(1)
+
+  const loadMorePortfolio = e => {
+    e.preventDefault()
+    setDataIndex( dataIndex + 1)
+  }
+
+  return <Section name={`Work`} fluid className="py-5" style={styles.roundedTopCorners}>
+    <div className='container' style={{ maxWidth: '1600px' }}>
+      <div className="row">
+        <div className='col-12 col-md-4 offset-md-4 d-flex flex-column align-items-center'>
+          <h3 style={styles.title} className='mb-5'>Work</h3>
+        </div>
+      </div>
+      <div className={`row no-gutters mb-5`}>
+        {data.map((item, index) => {
+          if(index < (dataIndex * 4)) {
+            return (
+              <div className='col-12 col-md-6' key={index}>
+                <PortfolioCard
+                  title={item.title}
+                  slug={item.slug}
+                  description={item.description}
+                  background={item.background}
+                  logo={item.logo}
+                  style={{
+                    minHeight: '555px'
+                  }}
+                />
+              </div>
+            )
+          }
+        })}
+      </div>
+      <div className={`row`}>
+        <div className='col-12 col-md-12 d-flex justify-content-center align-items-end justify-content-md-end'>
+          <ButtonBorderless onClick={loadMorePortfolio} url={`#`} className={`d-flex flex-column align-items-start p-0 ${typeof data[(dataIndex * 4)] === 'undefined' ? 'disabled' : null}`}>
+            <h4 style={styles.more}>More</h4>
+            <img src="/img/longArrowPurple.svg" className="img-fluid" />
+          </ButtonBorderless>
+        </div>
       </div>
     </div>
-    <div className={`row no-gutters mb-5`}>
-      {data.map((item, index) => {
-        if(index < 4){
-          return (
-            <div className='col-12 col-md-6' key={index}>
-              <PortfolioCard
-                title={item.title}
-                slug={item.slug}
-                description={item.description}
-                background={item.background}
-                logo={item.logo}
-                style={{
-                  minHeight: '555px'
-                }}
-              />
-            </div>
-          )
-        }
-      })}
-    </div>
-    <div className={`row`}>
-      <div className='col-12 col-md-12 d-flex justify-content-center align-items-end justify-content-md-end'>
-        <ButtonBorderless url={`/portfolio`} className="d-flex flex-column align-items-start p-0">
-          <h4 style={styles.more}>More</h4>
-          <img src="/img/longArrowPurple.svg" className="img-fluid" />
-        </ButtonBorderless>
-      </div>
-    </div>
-  </div>
-</Section>
+  </Section>
+}
 
 export default Work;

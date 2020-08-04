@@ -7,10 +7,12 @@ import config from '../../../config.js'
 
 const iconsMap = [
   {
+    name: 'github',
     url: config.urls.github,
     icon: faGithubAlt 
   },
   {
+    name: 'linkedin',
     url: config.urls.linkedin,
     icon: faLinkedin 
   },
@@ -28,6 +30,7 @@ const Social = () =>
           {
             iconsMap && iconsMap.map(item => 
               <Icon 
+                key={item.name}
                 {...item}
               />
             )
