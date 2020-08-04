@@ -84,6 +84,7 @@ const Portfolio = () => {
             <div className='row flex-fill'>
                 <div 
                     className='
+                        col-12
                         col-md-4 
                         offset-0 
                         offset-md-4 
@@ -98,7 +99,7 @@ const Portfolio = () => {
                         <h2 className='text-white' style={styles.footerName}>{data[nextIndex].title}</h2>
                     </a>
                 </div>                
-                <div className='col-md-3 offset-1 text-center d-flex flex-column justify-content-center align-items-center'>
+                <div className='col-12 col-md-3 offset-0 offset-md-1 text-center d-flex flex-column justify-content-center align-items-center'>
                     <ButtonBorderless url={`/portfolio/${data[nextIndex].slug}`} className="d-flex flex-column align-items-start p-0">
                         <h4 style={styles.more}>Next</h4>
                         <img src="/img/longArrowPurple.svg" className="img-fluid" />
