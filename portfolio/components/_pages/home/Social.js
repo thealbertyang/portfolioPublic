@@ -19,14 +19,22 @@ const iconsMap = [
 ]
 
 const Icon = ({ url, icon }) =>
-  <a href={url} target="_blank" className="mx-5">
+  <a href={url} target="_blank" className="m-auto m-md-5">
     <FontAwesomeIcon icon={icon} className="text-white" size="9x" />
   </a>
 
 const Social = () =>
 <Section fluid className={`d-flex p-5`} name={`social`} style={{ minHeight: 'calc(100vh + 50px)' }} background={`linear-gradient(180deg, #151124 0%, #31169D 100%)`}>
     <div className="row flex-fill">
-        <div className='col-md-12 d-flex align-items-center justify-content-center'>
+        <div 
+          className='
+            col-md-12 
+            d-flex 
+            flex-column
+            align-items-center 
+            justify-content-center
+            flex-md-row
+          '>
           {
             iconsMap && iconsMap.map(item => 
               <Icon 

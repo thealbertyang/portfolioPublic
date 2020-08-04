@@ -3,7 +3,6 @@ import Section from '../../page/Section'
 
 const styles = {
   title: {
-    fontSize: '171px',
     fontFamily: 'Advent Pro',
     fontWeight: '500',
     color: 'transparent',
@@ -26,10 +25,16 @@ const styles = {
 }
 
 const Hero = () =>
-<Section className={`d-flex align-items-center p-5`} fluid name={`hero`} background={`linear-gradient(rgb(32 255 214 / 99%) 0%, rgb(0 25 115 / 59%) 100%), url(/img/bg1.jpg) center center/ cover`} height={`985px`}>
+<Section 
+  name={`Hero`}
+  fluid
+  className={`d-flex align-items-center`}
+  background={`linear-gradient(rgb(32 255 214 / 99%) 0%, rgb(0 25 115 / 59%) 100%), url(/img/bg1.jpg) center center/ cover`} 
+  height={`985px`}
+>
     <div className="row flex-fill d-flex align-items-center">
       <div className='col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center'>
-        <h6 style={styles.name} className="pb-4">Albert Yang</h6>
+        <h6 style={styles.name} className="pb-4 text-center">Albert Yang</h6>
         <h1 style={styles.title}>Web</h1>
         <h1 style={styles.title}>Developer</h1>
       </div>

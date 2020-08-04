@@ -19,6 +19,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-final-form": "^6.3.0",
+    "react-media": "^2.0.0-rc.1",
     "sass": "^1.26.10"
   },
   "scripts": {
