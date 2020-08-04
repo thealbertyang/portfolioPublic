@@ -82,7 +82,18 @@ const Portfolio = () => {
         <Project/>
         <Section fluid className="d-flex" background={`linear-gradient(270deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%), url(${data[nextIndex].background}) center center / cover`} style={{ minHeight: '39rem' }}>
             <div className='row flex-fill'>
-                <div className='col-md-4 offset-4 text-center d-flex flex-column justify-content-center align-items-center'>
+                <div 
+                    className='
+                        col-md-4 
+                        offset-0 
+                        offset-md-4 
+                        text-center 
+                        d-flex 
+                        flex-column 
+                        justify-content-md-center
+                        justify-content-end 
+                        align-items-center
+                    '>
                     <a href={`/portfolio/${data[nextIndex].slug}`}>
                         <h2 className='text-white' style={styles.footerName}>{data[nextIndex].title}</h2>
                     </a>

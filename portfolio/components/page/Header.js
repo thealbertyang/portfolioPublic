@@ -2,13 +2,7 @@ import React from 'react'
 
 import Overline from '../typography/Overline'
 
-const styles = {
-    name: {
-        fontFamily: 'Graphik',
-        fontStyle: 'italic',
-        fontSize: '96px',
-    }
-}
+import styles from './Header.module.scss'
 
 const Header = ({ children, overlineClassName, overlineText, titleClassName, titleText, backgroundImage, backgroundColor, height }) => {
     return ( 
@@ -26,7 +20,7 @@ const Header = ({ children, overlineClassName, overlineText, titleClassName, tit
                 <div className="row">
                     <div className='col-12 d-flex flex-column justify-content-center align-items-center' style={{ height: height }}>
                         <Overline className={`${overlineClassName}`}>{overlineText}</Overline>
-                        <h1 className={`${titleClassName}`} style={styles.name}>{titleText}</h1>
+                        <h1 className={`${titleClassName} ${styles.name}`}>{titleText}</h1>
                         {children}
                     </div>
                 </div>

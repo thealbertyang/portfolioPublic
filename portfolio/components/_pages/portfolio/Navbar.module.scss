@@ -1,0 +1,29 @@
+.name {
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1em;
+    color: rgba(255, 255, 255, 0.75);
+
+    &:hover {
+        color: rgba(255, 255, 255);
+    }
+    
+    @media (min-width: 576px) { 
+        font-size: 20px;
+    }
+
+    @media (min-width: 768px) { 
+        font-size: 24px;
+    }
+
+    @media (min-width: 992px) { 
+        font-size: 24px;
+    }
+}
+
+.bg {
+    background: linear-gradient(180deg, rgba(114, 114, 114, 0.75) 0%, rgba(31, 31, 31, 0) 100%);
+}
