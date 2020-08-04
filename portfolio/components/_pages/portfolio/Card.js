@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Card = ({ slug, background, logo }) =>
-  <div className="card shadow border-0">
+const Card = ({ slug, background, logo, className, style }) =>
+  <div className={`card border-0 ${className}`} style={style}>
     <a href={getUrl(slug)} className="portfolio-link">
       <div className="portfolio-bg" style={{ background: getBackground(background) }}></div>
       <div className="portfolio-logo" style={{ height: '300px' }}>

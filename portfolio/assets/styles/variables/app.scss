@@ -1,6 +1,9 @@
 $theme-colors: (
-  primary: #5a1ce9
+  primary: #5a1ce9,
+  secondary: #5C6C7A,
+  dark: #47535F,
 );
 
 $link-color: darken(#5a1ce9, 6.5%);
 $text-muted: #9a9a9a;
+$spacer: 2rem;

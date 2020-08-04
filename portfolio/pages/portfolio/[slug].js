@@ -4,12 +4,37 @@ import * as _ from 'lodash'
 import dynamic from 'next/dynamic'
 
 import data from '../../components/_pages/portfolio/data';
+import Navbar from '../../components/_pages/portfolio/Navbar';
+import ButtonBorderless from '../../components//form/ButtonBorderless'
 
 import Head from 'next/head'
 
 import Header from '../../components/page/Header';
 import Section from '../../components/page/Section';
 import MainLayout from '../../components/page/Layout';
+
+const styles = {
+    more: {
+        fontFamily: 'Graphik',
+        fontSize: '48px',
+        fontWeight: '900',
+        fontStyle: 'italic',
+        color: '#8272FF',
+        textTransform: 'lowercase',
+        textAlign: 'center',
+        lineHeight: '113.5%',
+        letterSpacing: '0.08em',
+    },
+    footerName: {
+        fontFamily: 'Graphik',
+        fontWeight: '400',
+        fontStyle: 'italic',
+        textAlign: 'center',
+        lineHeight: '113.5%',
+        letterSpacing: '0.08em',
+    }
+  }
+  
 
 const Portfolio = () => {
     const router = useRouter()
@@ -31,21 +56,18 @@ const Portfolio = () => {
             <title>Albert Yang - {projectsTitle} </title>
             <meta property="og:title" content={`Albert Yang - ${projectsTitle}`} key="title" />
         </Head>
+        <Navbar 
+            projectUrl={project.url}
+        />
+                 
         <Header 
-            overlineText={`Projects`} 
             overlineClassName={`text-white`} 
             titleClassName={`text-white font-weight-normal`} 
             titleText={project.title} 
             backgroundImage={project.background} 
             height={`35rem`}>
-            <div className='row'>
-                <div className='col-12 d-flex flex-column'>
-                    {typeof project.url !== 'undefined' && <a href={project.url} target='_blank' className='btn btn-primary mb-2' tabIndex="1"><i className='fas fa-globe fa-fw'></i> View Site</a>}
-                    {typeof project.github !== 'undefined' && <a href={project.github} target='_blank' className='btn' tabIndex="2" className="btn text-white"><i className="fab fa-github"></i> View Github</a>}
-                </div>
-            </div>
         </Header>
-        <Section backgroundColor={`#ffffff`}>
+        {/*<Section backgroundColor={`#ffffff`}>
             <div className='container py-5'>
                 <div className='row'>
                     <div className='col-md-8 m-auto text-center'>
@@ -56,15 +78,20 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-        </Section>
+        </Section>*/}
         <Project/>
-        <Section backgroundColor={`#0d0d0d`} fluid>
-            <div className='row'>
-                <div className='col-md-6 text-center' style={{ background: `url(${data[nextIndex].background}) center center / cover`, minHeight: '500px' }}/>
-                <div className='col-md-6 text-center d-flex flex-column justify-content-center align-items-center' style={{ minHeight: '500px' }}>
+        <Section fluid className="d-flex" background={`linear-gradient(270deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%), url(${data[nextIndex].background}) center center / cover`} style={{ minHeight: '39rem' }}>
+            <div className='row flex-fill'>
+                <div className='col-md-4 offset-4 text-center d-flex flex-column justify-content-center align-items-center'>
                     <a href={`/portfolio/${data[nextIndex].slug}`}>
-                        <h4 className='text-white font-weight-light'><span className='text-muted'>Next Project</span> {data[nextIndex].title}</h4>
+                        <h2 className='text-white' style={styles.footerName}>{data[nextIndex].title}</h2>
                     </a>
+                </div>                
+                <div className='col-md-3 offset-1 text-center d-flex flex-column justify-content-center align-items-center'>
+                    <ButtonBorderless url={`/portfolio/${data[nextIndex].slug}`} className="d-flex flex-column align-items-start p-0">
+                        <h4 style={styles.more}>Next</h4>
+                        <img src="/img/longArrowPurple.svg" className="img-fluid" />
+                    </ButtonBorderless>
                 </div>
             </div>
         </Section>

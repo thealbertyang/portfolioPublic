@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../../assets/styles/app.scss';
-
 import Head from 'next/head'
 
 import Navbar from './Navbar';
@@ -13,9 +11,7 @@ const MainLayout = ({ children, title }) => {
             <title>Albert Yang - {title} </title>
             <meta property="og:title" content={`Albert Yang - ${title}`} key="title" />
         </Head>
-        <Navbar/>
         {children}
-        <Footer/>
     </>
 }
 

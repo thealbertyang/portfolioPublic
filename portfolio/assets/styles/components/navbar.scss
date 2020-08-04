@@ -9,8 +9,7 @@
 	letter-spacing: 5px;
 
   a {
-    font-family: $quicksand-font-stack;
-    font-weight: 500;
+    font-family: $graphik-font-stack;
     color: #333333;
   }
 
@@ -27,8 +26,10 @@
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  opacity: 0.85;
 
 	&:hover {
 			text-decoration: none;
-	}
+      opacity: 1;  
+  }
 }

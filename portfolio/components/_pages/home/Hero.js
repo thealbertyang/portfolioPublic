@@ -1,18 +1,37 @@
 import React from 'react'
 import Section from '../../page/Section'
 
+const styles = {
+  title: {
+    fontSize: '171px',
+    fontFamily: 'Advent Pro',
+    fontWeight: '500',
+    color: 'transparent',
+    textTransform: 'uppercase',
+    textAlign: 'center',
+    lineHeight: '100%',
+    letterSpacing: '0.07em',
+    textStroke: '4px #FFFFFF',
+    '-webkitTextStroke': '4px #FFFFFF',
+    textShadow: '0px 0px 45px rgba(207, 196, 255, 0.35)'
+  },
+  name: {
+    fontSize: '24px',
+    fontFamily: 'Raleway',
+    fontWeight: '400',
+    color: 'white',
+    textTransform: 'uppercase',
+    letterSpacing: '1em',
+  }
+}
+
 const Hero = () =>
-<Section className={`d-flex align-items-end p-5`} fluid name={`hero`} backgroundColor={`#f3f3f3`} backgroundImage={`/img/bg1.jpg`} backgroundSize={`cover`} height={`50rem`}>
-    <div className="row flex-fill d-flex align-items-end">
-      <div className='col-md-5 col-sm-12 d-flex flex-column align-items-start justify-content-center'>
-        <h1 className='text-white'>
-          Web developer
-        </h1>
-        <h2 className='font-weight-light text-white'>Los Angeles.</h2>
-        <p className='mb-5 text-white-50'>Hi I'm a full-stack react MERN web developer. Learn more about my work experience if you're interested in hiring.</p>
-        <a href='/portfolio' className='btn btn-primary btn-lg'>
-          <i className="fas fa-swatchbook mr-2"></i> My portfolio
-        </a>
+<Section className={`d-flex align-items-center p-5`} fluid name={`hero`} background={`linear-gradient(rgb(32 255 214 / 99%) 0%, rgb(0 25 115 / 59%) 100%), url(/img/bg1.jpg) center center/ cover`} height={`985px`}>
+    <div className="row flex-fill d-flex align-items-center">
+      <div className='col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center'>
+        <h6 style={styles.name} className="pb-4">Albert Yang</h6>
+        <h1 style={styles.title}>Web</h1>
+        <h1 style={styles.title}>Developer</h1>
       </div>
     </div>
 </Section>
