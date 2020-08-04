@@ -9,6 +9,7 @@ const styles = {
         fontWeight: '400',
         color: 'white',
         textTransform: 'uppercase',
+        textAlign: 'center',
         letterSpacing: '1em',
         color: 'rgba(255, 255, 255, 0.75)',
     },
@@ -28,8 +29,7 @@ const Navbar = () => {
             navbar 
             navbar-expand-lg 
             d-flex 
-            flex-column 
-            flex-md-row 
+            flex-row 
             align-items-center 
             px-2
             py-3
@@ -38,7 +38,7 @@ const Navbar = () => {
         " 
         style={styles.bg}
     >
-    <nav className="col-4">
+    <nav className="col-4 order-2 order-md-1">
         <a className="text-white" href="#" onClick={windowBack}>
             <FontAwesomeIcon
                 icon={faArrowLeft}
@@ -46,8 +46,10 @@ const Navbar = () => {
             />
         </a>
     </nav>
-    <nav className="col-12 col-md-4 d-flex align=items-center justify-content-center mb-0" ><a href="/" style={styles.name}>Albert Yang</a></nav>
-    <nav className="col-12 col-md-4 d-flex align=items-center justify-content-end">
+    <nav className="col-12 order-1 order-md-2 col-md-4 d-flex align=items-center justify-content-center mb-0" >
+        <a href="/" style={styles.name}>Albert Yang</a>
+    </nav>
+    <nav className="col-4 order-3 order-md-3 col-md-4 d-flex align=items-center justify-content-end">
         <a className="text-white" href="/portfolio">
             <FontAwesomeIcon
                 icon={faExternalLinkSquareAlt}
