@@ -39,7 +39,7 @@ const Navbar = ({ projectUrl }) => {
         <a 
             className={`text-white ${typeof projectUrl !== 'undefined' ? null : 'disabled'}`}
             href={typeof projectUrl !== 'undefined' ? projectUrl : '#'} 
-            target="_blank"
+            target="_blank"  
         >
             <FontAwesomeIcon
                 icon={faExternalLinkSquareAlt}
