@@ -16,7 +16,7 @@ jobs:
         working-directory: ./portfolio 
         run: |
           yarn install --frozen-lockfile
-          yarn run dev
+          yarn run test
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
         with:
