@@ -36,3 +36,8 @@
       opacity: 1;  
   }
 }
+
+.navbar nav a.disabled {
+  pointer-events: none;
+  opacity: 0.15;
+}

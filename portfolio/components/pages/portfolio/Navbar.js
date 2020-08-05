@@ -4,7 +4,7 @@ import { faArrowLeft, faExternalLinkSquareAlt } from '@fortawesome/free-solid-sv
 
 import styles from './Navbar.module.scss'
 
-const Navbar = () => {
+const Navbar = ({ projectUrl }) => {
     const windowBack = e => {
         e.preventDefault()
         window.history.back()
@@ -36,7 +36,11 @@ const Navbar = () => {
         <a href="/" className={styles.name}>Albert Yang</a>
     </nav>
     <nav className="col-4 col-md-4 d-flex align=items-center justify-content-end">
-        <a className="text-white" href="/portfolio">
+        <a 
+            className={`text-white ${typeof projectUrl !== 'undefined' ? null : 'disabled'}`}
+            href={typeof projectUrl !== 'undefined' ? projectUrl : '#'} 
+            target="_blank"
+        >
             <FontAwesomeIcon
                 icon={faExternalLinkSquareAlt}
                 size="3x"
