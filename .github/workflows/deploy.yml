@@ -16,4 +16,5 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: sudo git pull && docker-compose down && docker-compose build --no-cache && docker-compose up -d
+          debug: true
 
