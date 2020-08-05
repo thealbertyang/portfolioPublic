@@ -28,6 +28,7 @@ const styles = {
     footerName: {
         fontFamily: 'Graphik',
         fontWeight: '400',
+        fontSize: '3.7rem',
         fontStyle: 'italic',
         textAlign: 'center',
         lineHeight: '113.5%',
