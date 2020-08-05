@@ -24,6 +24,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          script: |
-          sudo git pull && docker-compose down && docker-compose build --no-cache && docker-compose up -d
+          script: sudo git pull && docker-compose down && docker-compose build --no-cache && docker-compose up -d
 
