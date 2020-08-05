@@ -2,7 +2,7 @@ name: Build
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ master, dev ]
 
 jobs:
   pull_request:
@@ -16,14 +16,5 @@ jobs:
         working-directory: ./portfolio 
         run: |
           yarn install --frozen-lockfile
-          yarn run dev
-      - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
-          script: |
-          sudo git pull && docker-compose down && docker-compose build --no-cache && docker-compose up -d
+          yarn run test
 
