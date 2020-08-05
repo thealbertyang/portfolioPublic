@@ -15,7 +15,7 @@ const Section = ({ name, fluid, background, backgroundImage, backgroundColor, ba
                 backgroundSize:  typeof backgroundSize !== 'undefined' ? backgroundSize : 'center center',
                 backgroundPosition: typeof backgroundPosition !== 'undefined' ? backgroundPosition : 'cover',
                 backgroundRepeat: 'no-repeat',
-                background: typeof background !== 'undefined' ? background : null,
+                ...(typeof background !== 'undefined' ? { background } : null),
                 height: typeof height !== 'undefined' ? height : 'auto',
                 ...style
             }

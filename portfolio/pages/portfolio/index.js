@@ -4,8 +4,8 @@ import MainLayout from '../../components/page/Layout';
 import Header from '../../components/page/Header'
 import Section from '../../components/page/Section'
 
-import data from '../../components/_pages/portfolio/data';
-import ProjectCard from '../../components/_pages/portfolio/Card'
+import data from '../../components/pages/portfolio/data';
+import ProjectCard from '../../components/pages/portfolio/Card'
 
 const title = "Portfolio";
 

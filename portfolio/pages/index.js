@@ -2,10 +2,10 @@ import React from 'react';
 
 import MainLayout from '../components/page/Layout';
 
-import Hero from '../components/_pages/home/Hero';
-import Work from '../components/_pages/home/Work';
-import Tech from '../components/_pages/home/Tech';
-import Social from '../components/_pages/home/Social';
+import Hero from '../components/pages/home/Hero';
+import Work from '../components/pages/home/Work';
+import Tech from '../components/pages/home/Tech';
+import Social from '../components/pages/home/Social';
 
 const title = "Home";
 

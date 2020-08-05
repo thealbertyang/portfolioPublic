@@ -3,9 +3,9 @@ import { useRouter } from 'next/router'
 import * as _ from 'lodash'
 import dynamic from 'next/dynamic'
 
-import data from '../../components/_pages/portfolio/data';
-import Navbar from '../../components/_pages/portfolio/Navbar';
-import ButtonBorderless from '../../components//form/ButtonBorderless'
+import data from '../../components/pages/portfolio/data';
+import Navbar from '../../components/pages/portfolio/Navbar';
+import ButtonBorderless from '../../components/form/ButtonBorderless'
 
 import Head from 'next/head'
 
@@ -49,7 +49,7 @@ const Portfolio = () => {
 
     let projectsTitle = project && project.title;
 
-    const Project = project && dynamic(() => import('../../components/_pages'+projectsDir+'/'+projectFile))
+    const Project = project && dynamic(() => import('../../components/pages'+projectsDir+'/'+projectFile))
 
     return project ? <MainLayout>
         <Head>
