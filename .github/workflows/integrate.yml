@@ -1,4 +1,4 @@
-name: Node Continous Integration
+name: Build
 
 on:
   pull_request:
@@ -12,4 +12,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn install --frozen-lockfile 
+      - name: Build frontend
+        working-directory: ./portfolio 
+        run: yarn install --frozen-lockfile
+        run: yarn test
