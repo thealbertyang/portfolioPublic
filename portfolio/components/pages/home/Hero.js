@@ -13,7 +13,7 @@ const Hero = () =>
 >
     <div className="row flex-fill d-flex align-items-center">
       <div className='col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center'>
-        <h6 className={`${styles.name} pb-4`}>Albert Yang</h6>
+        <h6 className={`${styles.name} pb-4 text-center`}>Albert Yang</h6>
         <h1 className={styles.title}>Web</h1>
         <h1 className={styles.title}>Developer</h1>
       </div>
